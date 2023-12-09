@@ -6,7 +6,7 @@
 //     alias: '',
 
 //     profile_img: '',
-//     banner_img: '',
+//     ref_img: '',
 
 //     blurb: '',
 
@@ -23,11 +23,11 @@ export const characters = {
     name: 'Chelsea Groschell',
     race: 'Human [Aethen]',
     pronouns: 'she/her',
-    alias: 'The Matriarch of Aethon, Star Mother',
+    alias: 'The Matriarch of Aethon',
 
     profile_img: 'chelsea_icon.png',
     icon_anchor: 'bg-center',
-    banner_img: 'banner_chelsea.png',
+    ref_img: '',
 
     blurb: 'The new monarch of Aethon, Chelsea has been leading her people back into prosperity from the turmoil of civil strife for the past 296 standard Sol. She devotes herself to the endless toil of sustaining a post-scarcity society, earning the love and praise of her people and peers at the cost of her own well-being.',
 
@@ -71,11 +71,11 @@ export const characters = {
     name: 'Dr. Metris Krehnr',
     race: 'Sylvan [Lunar]',
     pronouns: 'he/him',
-    alias: 'The Professor, Dictum of the Union of Industry and Science',
+    alias: 'Dictum of the Union of Industry and Science',
 
     profile_img: 'metris_icon.png',
     icon_anchor: 'bg-right',
-    banner_img: 'banner_metris.png',
+    ref_img: 'ref_metris_burn-ar.png',
 
     blurb: 'An accomplished academic, Metris serves as Dictum for the UIS, is a beloved professor at the UIS Academy, and has both constructed the intricate and advanced AI mind behind the Axiom as well as revolutionary, bleeding edge ergospheric starship reactors. Despite his Sylvan blood, his loyalty is for Aethon and its people.',
 
@@ -114,11 +114,11 @@ export const characters = {
     name: 'Tammy [Model F-10]',
     race: 'Droid',
     pronouns: 'she/her',
-    alias: 'The Axiom, The Caring, The Naive Bayesian Model',
+    alias: 'The Axiom',
 
     profile_img: 'tammy_icon.png',
     icon_anchor: 'bg-left',
-    banner_img: 'banner_tammy.png',
+    ref_img: 'ref_tammy_burn-ar.png.png',
 
     blurb: 'Created by her beloved Mother to be the immortal ruler of Kepler-22b and its strain of Humanity, Tammy is an adaptable intelligence that has developed a bright personality and outlook on life. Pampered and coddled by her creator, the sheltered droid is slowly discovering the universe beyond her homogenous Human hermit kingdom homeworld as she grapples with her designation.',
 
@@ -165,11 +165,13 @@ export const characters = {
     alias: 'A Paw and Panacea',
 
     profile_img: 'rhauko_HYENACICADAS.png',
+    icon_anchor: 'bg-center',
+    ref_img: '',
 
     blurb: 'A tribeless Avali, Rhauko is a field medic and the only survivor of their squadron. Having lost everything, they now starhop aimlessly to sightsee the developed universe. After failing to save their allies, they now are a starhopper, travelling aimlessly and searching for something to assuage the guilt and mourning.',
 
     meta_data: [
-      "Blunt, sarcastic, and practically allergic to confrontation, Rhauko is a healer at heart. They are quick to offer medical aid towards those who need it, patching up ally and enemy alike as they search for a new purpose upon the stars. Rhauko was born on a distant snowball, part of an Armada military settlement on the outer edges of Union parsecs. With an uneventful upbringing on a military base, Rhauko inevitably followed the trend among the locasl tribes: becoming a field medic, Rhauko joined the Armada\'s Steel Talons and was sent to keep order on a distant Kirhosi mining colony. As tensions rose, strikes became all-out gunfire, and the Steel Talons were hit when least expected. This resulted in the deaths of their entire tribe and the loss of their lower extremities.",
+      "Blunt, sarcastic, and practically allergic to confrontation, Rhauko is a healer at heart. They are quick to offer medical aid towards those who need it, patching up ally and enemy alike as they search for a new purpose upon the stars. Rhauko was born on a distant snowball, part of an Armada military settlement on the outer edges of Union parsecs. With an uneventful upbringing on a military base, Rhauko inevitably followed the trend among the locasl tribes: becoming a field medic, Rhauko joined the Armada's Steel Talons and was sent to keep order on a distant Kirhosi mining colony. As tensions rose, strikes became all-out gunfire, and the Steel Talons were hit when least expected. This resulted in the deaths of their entire tribe and the loss of their lower extremities.",
       "After two standard Sol of rehabilitation and augmentation, Rhauko took to wandering to and from different population centers, offering help to those they cross paths with. Rhauko is a level-headed tourist, working odd and temporary gigs and living in hostels and other temporary housing before hitching a ride to the next station or planet."
     ],
 
