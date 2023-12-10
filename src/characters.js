@@ -60,7 +60,7 @@ export const characters = {
         anchor: "bg-center"
       },
       {
-        url: "mother_and_child_seeing-sheep.png",
+        url: "motherandchild_seeing-sheep.png",
         anchor: "bg-center"
       }
     ]
@@ -99,7 +99,7 @@ export const characters = {
         anchor: "bg-center"
       },
       {
-        url: "starchildren_side_salt.png",
+        url: "starchildren_sidesalt.png",
         anchor: "bg-right"
       },
       {
@@ -135,24 +135,24 @@ export const characters = {
 
     img_gallery: [
       {
-        url: "starchildren_side_salt.png",
-        anchor: "bg-right"
-      },
-      {
-        url: "mother-and-child_side_salt.png",
+        url: "mother-and-child_sidesalt.png",
         anchor: "bg-center"
       },
       {
-        url: "tammy_loonie_alt.png",
+        url: "tammy_looniealt.png",
         anchor: "bg-center"
       },
       {
-        url: "tam.png",
-        anchor: "bg-center"
+        url: "tam_uknown.png",
+        anchor: "bg-top"
       },
       {
         url: "tammy_chijidal.png",
         anchor: "bg-center"
+      }, 
+      {
+        url: "spacelesbians_catniped.png",
+        anchor: "bg-right"
       }
     ]
   },
@@ -181,7 +181,7 @@ export const characters = {
 
     img_gallery: [
       {
-        url: "Rhauko.png",
+        url: "rhauko.png",
         anchor: "left"
       }
     ]

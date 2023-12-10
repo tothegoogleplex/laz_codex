@@ -55,7 +55,7 @@ export function CharInfo() {
                                     </div>
                                 </div>
                                 <div className="relative">
-                                    <div style={{ "backgroundImage": `url("${bgUrl}")` }} className={classNames("w-96 h-96 mx-auto bg-cover rounded -mt-96 flex justify-center", data.icon_anchor)}>
+                                    <div style={{ "backgroundImage": `url("${bgUrl}")` }} className={classNames("w-96 h-96 mx-auto bg-cover order-first rounded -mt-96 flex justify-center", data.icon_anchor)}>
                                     </div>
                                 </div>
                                 <div className="flex flex-row place-content-end sm:place-content-center order-last -mt-10 md:mt-0">
@@ -129,6 +129,7 @@ export function CharInfo() {
                                             {lightboxOpen ?
                                                 <div className="lightbox grid items-center" onClick={hideLightBox}>
                                                     <img className="lightbox-img justify-self-center" src={imageToShow}></img>
+                                                    <p className="text-white justify-self-center">created by {imageToShow.split("_")[1].split(".")[0]}</p>
                                                 </div>
                                                 : null
                                             }
