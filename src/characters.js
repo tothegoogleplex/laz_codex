@@ -118,7 +118,7 @@ export const characters = {
 
     profile_img: 'tammy_icon.png',
     icon_anchor: 'bg-left',
-    ref_img: 'ref_tammy_burn-ar.png.png',
+    ref_img: 'ref_tammy_burn-ar.png',
 
     blurb: 'Created by her beloved Mother to be the immortal ruler of Kepler-22b and its strain of Humanity, Tammy is an adaptable intelligence that has developed a bright personality and outlook on life. Pampered and coddled by her creator, the sheltered droid is slowly discovering the universe beyond her homogenous Human hermit kingdom homeworld as she grapples with her designation.',
 
@@ -166,7 +166,7 @@ export const characters = {
 
     profile_img: 'rhauko_HYENACICADAS.png',
     icon_anchor: 'bg-center',
-    ref_img: '',
+    ref_img: 'ref_rhauko_astrotail.png',
 
     blurb: 'A tribeless Avali, Rhauko is a field medic and the only survivor of their squadron. Having lost everything, they now starhop aimlessly to sightsee the developed universe. After failing to save their allies, they now are a starhopper, travelling aimlessly and searching for something to assuage the guilt and mourning.',
 

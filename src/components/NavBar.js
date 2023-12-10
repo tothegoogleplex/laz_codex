@@ -1,7 +1,6 @@
 import { Disclosure } from '@headlessui/react';
 import { StarIcon } from '@heroicons/react/24/outline';
 import { StarIcon as StarSolid } from '@heroicons/react/24/solid';
-import Logo from "../images/logo.png";
 import { Link } from 'react-router-dom';
 
 const navigation = [
@@ -15,6 +14,8 @@ function classNames(...classes) {
 };
 
 export function NavBar() {
+    var logoURL = process.env.PUBLIC_URL + "/images/logo.png";
+
     return (
         <Disclosure as="nav" className="bg-transparent">
             {({ open }) => (
@@ -38,7 +39,7 @@ export function NavBar() {
                                     <Link to="/">
                                         <img
                                             className="h-8 w-auto"
-                                            src={Logo}
+                                            src={logoURL}
                                             alt="Limit Approaching Zero logo"
                                         />
                                     </Link>

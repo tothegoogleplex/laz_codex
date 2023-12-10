@@ -1,9 +1,12 @@
 # limit approaching zero
 
-Website created for personal worldbuilding and TTRPG project with friends. 
+Website created for personal worldbuilding and TTRPG project with friends. Migrating and redesigning, moving away from old PHP project.
 
-Code is under MIT I guess or just take it. I don't care.
+Art displayed onsite is commissioned work and not for use in any way by those who are not the artist or commissioner.
 
-Game and worldbuilding content is under Open Game License.
+Code is under GPL I guess or just take it.
 
-Art displayed onsite is commissioned work and not for use.
+Game and worldbuilding content is under [Open Game License](https://opengamingfoundation.org/ogl.html).
+Dice system forked from the [FUDGE System](https://fudgerpg.com/) and also under OGL.
+
+React + Tailwind CSS + Heroicons + react-particles

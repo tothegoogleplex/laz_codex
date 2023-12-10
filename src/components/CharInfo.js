@@ -1,6 +1,7 @@
 import { Fragment, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { NavBar } from '../components/NavBar';
+import { GalleryCard } from '../components/GalleryCard';
 import { characters } from '../characters';
 import { UserCircleIcon, UserPlusIcon, PhotoIcon, BookmarkSquareIcon, Squares2X2Icon, CogIcon } from '@heroicons/react/24/solid';
 
@@ -16,15 +17,23 @@ export function CharInfo() {
 
     const { charName } = useParams();
     const [data] = useState(characters[charName]);
-    const [view, setView] = useState(VIEWS.BASE);
+    const [view, setView] = useState(VIEWS.GAL);
+    const [lightboxOpen, setLightBoxOpen] = useState(false);
+    const [imageToShow, setImageToShow] = useState('');
 
-    var bgUrl = require("../images/" + charName + "/" + data.profile_img);
-
-
+    var bgUrl = process.env.PUBLIC_URL + "/images/" + charName + "/" + data.profile_img;
+    var refUrl = process.env.PUBLIC_URL + "/images/" + charName + "/" + data.ref_img;
 
     function classNames(...classes) {
         return classes.filter(Boolean).join(' ')
     };
+
+    function showImage(image) {
+        setImageToShow(image);
+        setLightBoxOpen(true);
+    };
+
+    const hideLightBox = () => { setLightBoxOpen(false) };
 
     return (
         <Fragment>
@@ -83,7 +92,9 @@ export function CharInfo() {
                                 {
                                     view === VIEWS.INFO ?
                                         <Fragment>
-                                            <p>detailed info</p>
+                                            {data.meta_data.forEach(p => {
+                                                <p>p</p>
+                                            })}
                                         </Fragment>
                                         : null
                                 }
@@ -107,7 +118,7 @@ export function CharInfo() {
                                 {
                                     view === VIEWS.REF ?
                                         <Fragment>
-                                            <p>reference sheet and other ref materials</p>
+                                            <img className="mt-12 w-auto h-full bg-cover rounded mx-auto" src={refUrl} alt={""} />
                                         </Fragment>
                                         : null
                                 }
@@ -115,7 +126,22 @@ export function CharInfo() {
                                 {
                                     view === VIEWS.GAL ?
                                         <Fragment>
-                                            <p>gallery of images</p>
+                                            {lightboxOpen ?
+                                                <div className="lightbox grid items-center" onClick={hideLightBox}>
+                                                    <img className="lightbox-img justify-self-center" src={imageToShow}></img>
+                                                </div>
+                                                : null
+                                            }
+                                            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4 w-full mt-12">
+                                                {
+                                                    data.img_gallery.map((i) =>
+                                                    (<div onClick={() => showImage(`${process.env.PUBLIC_URL + "/images/" + charName + "/" + i.url}`)}>
+                                                        <GalleryCard key={i.url}
+                                                            charName={charName}
+                                                            i={i} />
+                                                    </div>))
+                                                }
+                                            </div>
                                         </Fragment>
                                         : null
                                 }

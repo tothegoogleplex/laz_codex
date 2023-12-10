@@ -58,3 +58,18 @@ body {
   left: 0;
   z-index: -10;
 }
+
+.lightbox {
+  z-index: 5;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  height: 100%;
+}
+
+.lightbox-img {
+  max-height: 85%;
+  width: auto;
+}

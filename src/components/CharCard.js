@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom';
 
 export function CharCard({ char }) {
 
-    var bgUrl = require("../images/" + char[0] + "/" + char[1].profile_img);
+    var bgUrl = process.env.PUBLIC_URL + "/images/" + char[0] + "/" + char[1].profile_img;
 
     function classNames(...classes) {
-        return classes.filter(Boolean).join(' ')
+        return classes.filter(Boolean).join(' ');
     };
 
     return (
