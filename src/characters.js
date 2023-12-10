@@ -14,6 +14,39 @@
 
 //     physical_data: [],
 
+    // stats: {
+    //   self: {
+    //     "Health": 10,
+    //     "KAC": 4,
+    //     "EAC": 2,
+    //     "Stunt": 4
+    //   },
+    //   nav: {
+    //     "Land": 7,
+    //     "Atmos": 1,
+    //     "Swim": 0,
+    //     "Space": 0,
+    //   },
+    //   base: {
+    //     "Mox": 2,
+    //     "Dex": 5,
+    //     "Fort": 2,
+    //     "Acu": 2,
+    //     "Wit": 5,
+    //     "Pres": 1
+    //   },
+    //   env: {
+    //     "Heat": 2,
+    //     "Cold": 4,
+    //     "Bio": 5,
+    //     "Rad": 2,
+    //     "Phys": 3,
+    //     "Elec": 1,
+    //     "Grav": 3,
+    //     "Cos": 2
+    //   }
+    // },
+
 //     img_gallery: []
 // }
 
@@ -41,6 +74,39 @@ export const characters = {
     physical_data: [
       "Chelsea is a small, stout Aethen with a soft figure and confident poise, and despite her less than intimidating stature, her presence demands respect and she carries herself with an air of authority. Often dressed in regal and ostentatious attire, the leader of Aethon keeps herself groomed and decorated, commanding attention from her peers and audiences alike. Favouring the rainbow of minerals scattered across the stars and pristine alloys, she decorates herself in glittering and colourful jewellery. Her eyes are not a static colour, instead a hazy mix of pinks, purples and blues that can make one's head a little hazy when holding eye contact. As the first child of the Splice, she is physically fragile from altered genetics, and suffers from chronic pain, internal bleeds, and weak joints. Often, she holds herself with grace and strength, but she isn't afraid to allow her exhaustion to show around her peers and people."
     ],
+
+    stats: {
+      self: {
+        "health": 6,
+        "KAC": 2,
+        "EAC": 2,
+        "stunt": 10
+      },
+      nav: {
+        "land": 3,
+        "atmos": 1,
+        "swim": 0,
+        "space": 0,
+      },
+      base: {
+        "moxie": 1,
+        "denterity": 4,
+        "fortitude": 1,
+        "acumen": 5,
+        "wit": 3,
+        "presence": 4
+      },
+      env: {
+        "heat": 2,
+        "cold": 2,
+        "bio": 0,
+        "rad": 1,
+        "physical": 0,
+        "electric": 2,
+        "gravity": 2,
+        "cosmic": 5
+      }
+    },
 
     img_gallery: [
       {
@@ -89,6 +155,39 @@ export const characters = {
       "Metris is a small Sylvan, having been raised by Humans on their strange and exorbitant diet(though Metris is vegan). He is a thin, fairly androgynous man who makes up for his small stature with his mastery of the resting bitch face. Like most Sylvans, his eyes are pools of colour(in this case, magenta), and he uses his ears to \"flag\" emotions. Ears perked usually indicate annoyance, aggression or alertness. Ears that are relaxed or lowered can indicate comfort, submission or happiness. However, unlike many other of his kin, Metris has learned how to emote like a Human with subtle facial expressions. He speaks with somewhat of a monotone, unless lecturing, where his excitement for maths gives him some tonality. Metris' skin is white, and his blood is silver, laced with a natural mercury compound which causes him to flush with greys. He does not have a Human skin tone and is not reddish. Oftentimes, he likes to keep formal attire in tidy lab gear or professional suits, though he prefers and enjoys loose fitting clothing."
     ],
 
+    stats: {
+      self: {
+        "health": 6,
+        "KAC": 4,
+        "EAC": 2,
+        "stunt": 4
+      },
+      nav: {
+        "land": 6,
+        "atmos": 0,
+        "swim": 3,
+        "space": 0,
+      },
+      base: {
+        "moxie": 2,
+        "denterity": 4,
+        "fortitude": 0,
+        "acumen": 5,
+        "wit": 5,
+        "presence": 2
+      },
+      env: {
+        "heat": 0,
+        "cold": 0,
+        "bio": -1,
+        "rad": 0,
+        "physical": -1,
+        "electric": 3,
+        "gravity": 3,
+        "cosmic": 5
+      }
+    },
+
     img_gallery: [
       {
         url: "metris_chijidal.png",
@@ -133,6 +232,39 @@ export const characters = {
       "Typically, Tammy wears clothing that accentuates her hips, and tends towards a feminine or sometimes tomboyish dressing style. Decorated with sleek and sophisticated jewellery wrought of metals such as titanium, silver, platinum, palladium and tungsten, Tammy loves to don flashy, glittering silken dresses that recall the cosmos. However, some events and adventures call for a casual Human style, and Tammy adores simple items such as sundresses, light jackets, skirts and blouses and takes on a playful expression when offworld. Tammy is prudent about hygiene and keeps herself in wonderful physical condition, even if she isn't a fan of the whole sitting down and having patience thing. Tammy is capable of exerting considerable force despite her appearance. With a chassis that is waterproof and resistant to extreme climates such as the vacuum of space or the frozen expanse of an ice waste, she is quite fit for exploration."
     ],
 
+    stats: {
+      self: {
+        "Health": 10,
+        "KAC": 4,
+        "EAC": 2,
+        "Stunt": 4
+      },
+      nav: {
+        "Land": 7,
+        "Atmos": 1,
+        "Swim": 0,
+        "Space": 0,
+      },
+      base: {
+        "Mox": 2,
+        "Dex": 5,
+        "Fort": 2,
+        "Acu": 2,
+        "Wit": 5,
+        "Pres": 1
+      },
+      env: {
+        "Heat": 2,
+        "Cold": 4,
+        "Bio": 5,
+        "Rad": 2,
+        "Phys": 3,
+        "Elec": 1,
+        "Grav": 3,
+        "Cos": 2
+      }
+    },
+
     img_gallery: [
       {
         url: "mother-and-child_sidesalt.png",
@@ -149,7 +281,7 @@ export const characters = {
       {
         url: "tammy_chijidal.png",
         anchor: "bg-center"
-      }, 
+      },
       {
         url: "spacelesbians_catniped.png",
         anchor: "bg-right"

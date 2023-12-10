@@ -2,6 +2,8 @@ import { Fragment, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { NavBar } from '../components/NavBar';
 import { GalleryCard } from '../components/GalleryCard';
+import { TextBlurb } from './TextBlurb';
+import { DiceBox } from './DiceBox';
 import { characters } from '../characters';
 import { UserCircleIcon, UserPlusIcon, PhotoIcon, BookmarkSquareIcon, Squares2X2Icon, CogIcon } from '@heroicons/react/24/solid';
 
@@ -17,7 +19,7 @@ export function CharInfo() {
 
     const { charName } = useParams();
     const [data] = useState(characters[charName]);
-    const [view, setView] = useState(VIEWS.GAL);
+    const [view, setView] = useState(VIEWS.DICE);
     const [lightboxOpen, setLightBoxOpen] = useState(false);
     const [imageToShow, setImageToShow] = useState('');
 
@@ -81,10 +83,8 @@ export function CharInfo() {
                                 {
                                     view === VIEWS.BASE ?
                                         <Fragment>
-                                            <div className="mt-12 flex flex-col justify-center">
-                                                <p className="text-zinc-100 text-left indent-6 lg:px-16">
-                                                    {data.blurb}
-                                                </p>
+                                            <div className=" flex flex-col justify-center">
+                                                <TextBlurb p={data.blurb} />
                                             </div>
                                         </Fragment>
                                         : null
@@ -93,9 +93,10 @@ export function CharInfo() {
                                 {
                                     view === VIEWS.INFO ?
                                         <Fragment>
-                                            {data.meta_data.forEach(p => {
-                                                <p>p</p>
-                                            })}
+                                            <h2 className="text-white text-5xl mt-10">Meta Data:</h2>
+                                            {data.meta_data.map((p) => (
+                                                <TextBlurb p={p} />
+                                            ))}
                                         </Fragment>
                                         : null
                                 }
@@ -103,7 +104,7 @@ export function CharInfo() {
                                 {
                                     view === VIEWS.DICE ?
                                         <Fragment>
-                                            <p>dicebox applet</p>
+                                            <DiceBox self={data.stats.self} nav={data.stats.nav} base={data.stats.base} env={data.stats.env}/>
                                         </Fragment>
                                         : null
                                 }
@@ -120,7 +121,12 @@ export function CharInfo() {
                                     view === VIEWS.REF ?
                                         <Fragment>
                                             <img className="mt-12 w-auto h-full bg-cover rounded mx-auto" src={refUrl} alt={""} />
+                                            <h2 className="text-white text-5xl mt-10">Physical Data:</h2>
+                                            {data.physical_data.map((p) => (
+                                                <TextBlurb p={p} />
+                                            ))}
                                         </Fragment>
+
                                         : null
                                 }
 
@@ -129,7 +135,7 @@ export function CharInfo() {
                                         <Fragment>
                                             {lightboxOpen ?
                                                 <div className="lightbox grid items-center" onClick={hideLightBox}>
-                                                    <img className="lightbox-img justify-self-center" src={imageToShow}></img>
+                                                    <img className="lightbox-img justify-self-center" src={imageToShow} alt=""></img>
                                                     <p className="text-white justify-self-center">created by {imageToShow.split("_")[1].split(".")[0]}</p>
                                                 </div>
                                                 : null

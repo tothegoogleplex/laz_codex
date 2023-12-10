@@ -73,3 +73,9 @@ body {
   max-height: 85%;
   width: auto;
 }
+
+.readfont {
+  line-height: 1.6em;
+  font-size: larger;
+  letter-spacing: 1px;
+}
