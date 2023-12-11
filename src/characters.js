@@ -14,38 +14,38 @@
 
 //     physical_data: [],
 
-    // stats: {
-    //   self: {
-    //     "Health": 10,
-    //     "KAC": 4,
-    //     "EAC": 2,
-    //     "Stunt": 4
-    //   },
-    //   nav: {
-    //     "Land": 7,
-    //     "Atmos": 1,
-    //     "Swim": 0,
-    //     "Space": 0,
-    //   },
-    //   base: {
-    //     "Mox": 2,
-    //     "Dex": 5,
-    //     "Fort": 2,
-    //     "Acu": 2,
-    //     "Wit": 5,
-    //     "Pres": 1
-    //   },
-    //   env: {
-    //     "Heat": 2,
-    //     "Cold": 4,
-    //     "Bio": 5,
-    //     "Rad": 2,
-    //     "Phys": 3,
-    //     "Elec": 1,
-    //     "Grav": 3,
-    //     "Cos": 2
-    //   }
-    // },
+// stats: {
+//   self: {
+//     "Health": 10,
+//     "KAC": 4,
+//     "EAC": 2,
+//     "Stunt": 4
+//   },
+//   nav: {
+//     "Land": 7,
+//     "Atmos": 1,
+//     "Swim": 0,
+//     "Space": 0
+//   },
+//   base: {
+//     "Mox": 2,
+//     "Dex": 5,
+//     "Fort": 2,
+//     "Acu": 2,
+//     "Wit": 5,
+//     "Pres": 1
+//   },
+//   env: {
+//     "Heat": 2,
+//     "Cold": 4,
+//     "Bio": 5,
+//     "Rad": 2,
+//     "Phys": 3,
+//     "Elec": 1,
+//     "Grav": 3,
+//     "Cos": 2
+//   }
+// },
 
 //     img_gallery: []
 // }
@@ -77,34 +77,34 @@ export const characters = {
 
     stats: {
       self: {
-        "health": 6,
+        "Health": 6,
         "KAC": 2,
         "EAC": 2,
-        "stunt": 10
+        "Stunt": 10
       },
       nav: {
-        "land": 3,
-        "atmos": 1,
-        "swim": 0,
-        "space": 0,
+        "Land": 3,
+        "Atmos": 1,
+        "Swim": 0,
+        "Space": 0
       },
       base: {
-        "moxie": 1,
-        "denterity": 4,
-        "fortitude": 1,
-        "acumen": 5,
-        "wit": 3,
-        "presence": 4
+        "Mox": 1,
+        "Dex": 4,
+        "Fort": 1,
+        "Acu": 5,
+        "Wit": 3,
+        "Pres": 4
       },
       env: {
-        "heat": 2,
-        "cold": 2,
-        "bio": 0,
-        "rad": 1,
-        "physical": 0,
-        "electric": 2,
-        "gravity": 2,
-        "cosmic": 5
+        "Heat": 2,
+        "Cold": 3,
+        "Bio": 0,
+        "Rad": 1,
+        "Phys": 0,
+        "Elec": 2,
+        "Grav": 2,
+        "Cos": 5
       }
     },
 
@@ -157,34 +157,34 @@ export const characters = {
 
     stats: {
       self: {
-        "health": 6,
+        "Health": 6,
         "KAC": 4,
         "EAC": 2,
-        "stunt": 4
+        "Stunt": 4
       },
       nav: {
-        "land": 6,
-        "atmos": 0,
-        "swim": 3,
-        "space": 0,
+        "Land": 5,
+        "Atmos": 0,
+        "Swim": 3,
+        "Space": 0
       },
       base: {
-        "moxie": 2,
-        "denterity": 4,
-        "fortitude": 0,
-        "acumen": 5,
-        "wit": 5,
-        "presence": 2
+        "Mox": 2,
+        "Dex": 4,
+        "Fort": 0,
+        "Acu": 5,
+        "Wit": 5,
+        "Pres": 2
       },
       env: {
-        "heat": 0,
-        "cold": 0,
-        "bio": -1,
-        "rad": 0,
-        "physical": -1,
-        "electric": 3,
-        "gravity": 3,
-        "cosmic": 5
+        "Heat": 0,
+        "Cold": 0,
+        "Bio": -1,
+        "Rad": 0,
+        "Phys": -1,
+        "Elec": 3,
+        "Grav": 3,
+        "Cos": 5
       }
     },
 
@@ -243,7 +243,7 @@ export const characters = {
         "Land": 7,
         "Atmos": 1,
         "Swim": 0,
-        "Space": 0,
+        "Space": 0
       },
       base: {
         "Mox": 2,
@@ -310,6 +310,39 @@ export const characters = {
     physical_data: [
       "Rhauko is an Avali with sepia body and brilliant aqua-hued crest and arm feathers. Due to battle injuries, their eyes and lower half were replaced by Avali-built cybernetics. With a regular Avali build and an androgynous feather morph, they were once a fairly unremarkable Avali. Now, their cybernetic taur body makes them larger and much more noticable than the average raptid. Rhauko often travels settlements and station cities in the \"nude\" or wearing loose Avali wraps with their field bags strapped to their lower half. They also are known to wear medsuits and their field gear and light armor of Avali make. Their lower front claws are nimble, helpful for purforming surgery, injections and other delicate procedures."
     ],
+
+    stats: {
+      self: {
+        "Health": 10,
+        "KAC": 4,
+        "EAC": 2,
+        "Stunt": 4
+      },
+      nav: {
+        "Land": 7,
+        "Atmos": 1,
+        "Swim": 0,
+        "Space": 0
+      },
+      base: {
+        "Mox": 2,
+        "Dex": 5,
+        "Fort": 2,
+        "Acu": 2,
+        "Wit": 5,
+        "Pres": 1
+      },
+      env: {
+        "Heat": 2,
+        "Cold": 4,
+        "Bio": 5,
+        "Rad": 2,
+        "Phys": 3,
+        "Elec": 1,
+        "Grav": 3,
+        "Cos": 2
+      }
+    },
 
     img_gallery: [
       {

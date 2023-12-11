@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { EnvDice } from "./Dice";
+import { Fragment, useState } from "react";
+import { EnvDice, NavDice, BaseDice } from "./Dice";
 
 export function DiceBox({ self, nav, base, env }) {
     const [dice, setDice] = useState([]);
@@ -7,10 +7,21 @@ export function DiceBox({ self, nav, base, env }) {
     const [health, setHealth] = useState(self.health);
 
     return (
-        <div className="mt-10 mx-10 border rounded">
-            <div className="">
-                <EnvDice value={""} type={""} />
+        <Fragment>
+            <div className="mt-10"><h2>Health</h2> <h2>Kinetic Armour</h2> <h2>Energy Armour</h2></div>
+
+            <div className="mt-10 mx-10 border rounded">
+                <div className="flex flex-row flex-wrap">
+                    <BaseDice value={6} />
+                    <BaseDice value={1} />
+                    <BaseDice value={4} />
+                    <BaseDice value={3} />
+                    <BaseDice value={2} />
+                    <BaseDice value={5} />
+                </div>
             </div>
-        </div>
+
+            {/* <div> buttons to roll here </div> */}
+        </Fragment>
     );
 }

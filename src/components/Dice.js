@@ -1,6 +1,6 @@
 import {
     faMeteor, faPlus, faMinus, faExplosion
-} from "@fortawesome/react-fontawesome";
+} from '@fortawesome/free-solid-svg-icons';
 
 import {
     faFire as Heat,
@@ -13,17 +13,44 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-export function NavDice(){
-    return(null);
+export function NavDice({ value, type }) {
+    return (null);
 };
 
-export function BaseDice(){
-    return(null);
+export function BaseDice({ value }) {
+    var icon = "";
+
+    switch (value) {
+        case 1: icon = faExplosion;
+            break;
+        case 2: icon = faMinus;
+            break;
+        case 3: icon = "";
+            break;
+        case 4: icon = "";
+            break;
+        case 5: icon = faPlus;
+            break;
+        case 6: icon = faMeteor;
+            break;
+    }
+
+    return (
+        <div className="grid border rounded w-24 h-24 bg-white items-center">
+            {
+                icon === "" ?
+                    null :
+                    <FontAwesomeIcon className="w-4/5 h-4/5 text-black mx-auto" icon={icon} />
+            }
+        </div>
+    );
 };
 
 export function EnvDice({ value, type }) {
 
-    return (<FontAwesomeIcon icon={Heat} />);
+    return (
+        null
+    );
 };
 // todo: rename characters stats to match so that can index name as icon={}
 // grid layout for buttons
