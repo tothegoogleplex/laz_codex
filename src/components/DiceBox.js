@@ -8,9 +8,9 @@ export function DiceBox({ self, nav, base, env }) {
 
     return (
         <Fragment>
-            <div className="mt-10"><h2>Health</h2> <h2>Kinetic Armour</h2> <h2>Energy Armour</h2></div>
+            <div className="mt-10"><h2>Health</h2> <h2>Kinetic Armour</h2> <h2>Energy Armour</h2><h2>Stunt</h2></div>
 
-            <div className="mt-10 mx-10 border rounded">
+            <div className="mt-10 md:mx-20 border rounded">
                 <div className="flex flex-row flex-wrap">
                     <BaseDice value={6} />
                     <BaseDice value={1} />
