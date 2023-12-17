@@ -128,6 +128,26 @@ export const characters = {
       {
         url: "motherandchild_seeing-sheep.png",
         anchor: "bg-center"
+      },
+      {
+        url: "chelsea_burn-ar.png",
+        anchor: "bg-top"
+      },
+      {
+        url: "chelsea_CirceA.png",
+        anchor: "bg-top"
+      },
+      {
+        url: "chelsea_jagal.png",
+        anchor: "bg-top"
+      },
+      {
+        url: "doubletrouble_chijidal.png",
+        anchor: "bg-center"
+      },
+      {
+        url: "mother-and-child_side-salt.png",
+        anchor: "bg-center"
       }
     ]
   },
@@ -204,6 +224,26 @@ export const characters = {
       {
         url: "metris_seeing-sheep.png",
         anchor: "bg-top"
+      },
+      {
+        url: "metris2_hiiikary.png",
+        anchor: "bg-top"
+      },
+      {
+        url: "metris_sleepingwoolf.jpg",
+        anchor: "bg-center"
+      },
+      {
+        url: "metris_zemael.png",
+        anchor: "bg-center"
+      },
+      {
+        url: "metris_niuxii.gif",
+        anchor: "bg-top"
+      },
+      {
+        url: "office_jagal.png",
+        anchor: "bg-center"
       }
     ]
   },
@@ -275,16 +315,40 @@ export const characters = {
         anchor: "bg-center"
       },
       {
-        url: "tam_uknown.png",
+        url: "tam_unknown.png",
         anchor: "bg-top"
       },
       {
         url: "tammy_chijidal.png",
-        anchor: "bg-center"
+        anchor: "bg-top"
       },
       {
         url: "spacelesbians_catniped.png",
         anchor: "bg-right"
+      },
+      {
+        url: "solarpunkissci-ficottagecore_side-salt.png",
+        anchor: "bg-left"
+      },
+      {
+        url: "tammy_holy-maple.png",
+        anchor: "bg-top"
+      },
+      {
+        url: "tammy_salriaah.jpg",
+        anchor: "bg-center"
+      },
+      {
+        url: "the-axiom_sleepingwoolf.png",
+        anchor: "bg-center"
+      },
+      {
+        url: "tammy_rabrascal.jpg",
+        anchor: "bg-top"
+      },
+      {
+        url: "tammy_allseeingsheep.png",
+        anchor: "bg-top"
       }
     ]
   },
@@ -351,4 +415,75 @@ export const characters = {
       }
     ]
   },
+
+  aias: {
+    url: 'aias',
+    name: 'Aias Miaris',
+    race: 'Sylvan [Solar]',
+    pronouns: 'they/them',
+    alias: "The Revolution's Poster Child",
+
+    profile_img: 'aias_sdfjmeng.gif',
+    ref_img: 'ref-aias_jagal.png',
+
+    blurb: "starwalker_X-2 is known in more normative holonet circles as a startraveller and vlogger. Documenting their adventures in the most populous, bustling station cities, the boisterous Sylvan has garnered a large following of Kirhosi and Gaolotian fans that delight in watching Aias make a fool of themself. On the run from corporate authorities, Aias is finding out just how much influence one can garner over others.",
+
+    meta_data: [
+      "Aias is a recent graduate of the prestigious Aalasar Cosmos Academy deep space exploration program, having their goal of becoming a planetary surveyor fall apart after realising that would require being alone for extended periods of time. Now, Aias is a streamer on the holonet with a growing following. They stream about travels, life and anything else they feel like, and have amassed a mostly Gaolotian and Kirhosi following due to their lackadaisical and carefree nature. They are, predictably, a bit of a diva and a brat. Aias craves attention to a point that some may call unhealthy, and can be a bit of an annoyance as well as an amusing companion. Having grown up on Aalasar, Aias is a sheltered and somewhat naive Sylvan, tending to be a bit spoiled and dependent. After a trespassing gone worse, Aias' tomfoolery resulted in the destruction of a large research and development lab owned by the Kirhosi megacorporation Valada Enterprises. This event occurred on stream, making the unawares Sylvan an icon for Kirhosi revolutionaries working against Valada.",
+    ],
+
+    physical_data: [
+      "Aias Miaris is an average Sylvan with a lithe build and tall frame. Aias is wholly Blind and has no vision, instead utilising assistive technology to substitute their senses. This visor is constructed of allosteel and photonic epoxy that is opaque, and while usually a cool blue, can be changed to any hue. This visor docks to two implants on the sides of Aias' head, and these small magnetic docks act as a holster and a data bus to Aias' subdermal cybernetics. This visor houses a VI that communicates to Aias through this data bus.",
+
+      "As a Sylvan, Aias does not have a Human skin tone, instead having one that is very close to copper. Their flesh is a deep turquoise colour, their blood a copper colour with a slight metallic shine. Their blood turns turquoise when oxidised, making them flush with a turquoise instead of red like a Human would. Their hair is long, reaching all the way down their back, and Aias has snow white hair. Their eyes are a soft teal, with their right eye being discoloured due to the genetic condition causing their Blindness."
+    ],
+
+    stats: {
+      self: {
+        "Health": 7,
+        "KAC": 4,
+        "EAC": 1,
+        "Stunt": 5
+      },
+      nav: {
+        "Land": 6,
+        "Atmos": 0,
+        "Swim": 3,
+        "Space": 0
+      },
+      base: {
+        "Mox": -1,
+        "Dex": 5,
+        "Fort": 2,
+        "Acu": 2,
+        "Wit": 1,
+        "Pres": 5
+      },
+      env: {
+        "Heat": 0,
+        "Cold": 0,
+        "Bio": -2,
+        "Rad": 0,
+        "Phys": 0,
+        "Elec": 0,
+        "Grav": 2,
+        "Cos": 2
+      }
+    },
+
+    img_gallery: [
+      {
+        url: "aias_sdfjmeng.png",
+        anchor: "bg-center"
+      },
+      {
+        url: "aias_Chamychamomile.png",
+        anchor: "bg-left"
+      },
+      {
+        url: "aias_burn-ar.png",
+        anchor: "bg-top"
+      }
+    ]
+  }
 };

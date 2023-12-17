@@ -83,7 +83,7 @@ export function CharInfo() {
                                 {
                                     view === VIEWS.BASE ?
                                         <Fragment>
-                                            <div className=" flex flex-col justify-center">
+                                            <div className="flex flex-col justify-center">
                                                 <TextBlurb p={data.blurb} />
                                             </div>
                                         </Fragment>
@@ -104,7 +104,7 @@ export function CharInfo() {
                                 {
                                     view === VIEWS.DICE ?
                                         <Fragment>
-                                            <DiceBox self={data.stats.self} nav={data.stats.nav} base={data.stats.base} env={data.stats.env}/>
+                                            <DiceBox self={data.stats.self} nav={data.stats.nav} base={data.stats.base} env={data.stats.env} />
                                         </Fragment>
                                         : null
                                 }
@@ -120,7 +120,7 @@ export function CharInfo() {
                                 {
                                     view === VIEWS.REF ?
                                         <Fragment>
-                                            <img className="mt-12 w-auto h-full bg-cover rounded mx-auto" src={refUrl} alt={""} />
+                                            <img className="mt-10 w-auto h-full bg-cover rounded mx-auto" src={refUrl} alt={""} />
                                             <h2 className="text-white text-5xl mt-10">Physical Data:</h2>
                                             {data.physical_data.map((p) => (
                                                 <TextBlurb p={p} />
@@ -133,12 +133,13 @@ export function CharInfo() {
                                 {
                                     view === VIEWS.GAL ?
                                         <Fragment>
-                                            {lightboxOpen ?
-                                                <div className="lightbox grid items-center" onClick={hideLightBox}>
-                                                    <img className="lightbox-img justify-self-center" src={imageToShow} alt=""></img>
-                                                    <p className="text-white justify-self-center">created by {imageToShow.split("_")[1].split(".")[0]}</p>
-                                                </div>
-                                                : null
+                                            {
+                                                lightboxOpen ?
+                                                    <div className="lightbox grid items-center" onClick={hideLightBox}>
+                                                        <img className="lightbox-img justify-self-center" src={imageToShow} alt=""></img>
+                                                        <p className="text-white justify-self-center">created by {imageToShow.split("_")[1].split(".")[0]}</p>
+                                                    </div>
+                                                    : null
                                             }
                                             <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4 w-full mt-12">
                                                 {

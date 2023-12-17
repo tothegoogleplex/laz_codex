@@ -7,13 +7,14 @@ import {
     faIcicles as Cold,
     faBiohazard as Bio,
     faRadiation as Rad,
-    faBolt as Elect,
+    faHandHolding as Phys,
+    faBolt as Elec,
     faGaugeHigh as Grav,
     faStarHalfStroke as Cos
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-export function NavDice({ value, type }) {
+export function NavDice({ value }) {
     return (null);
 };
 
@@ -36,11 +37,11 @@ export function BaseDice({ value }) {
     }
 
     return (
-        <div className="grid border rounded w-24 h-24 bg-white items-center">
+        <div className="grid rounded w-24 h-24 bg-black items-center">
             {
                 icon === "" ?
                     null :
-                    <FontAwesomeIcon className="w-4/5 h-4/5 text-black mx-auto" icon={icon} />
+                    <FontAwesomeIcon className="w-4/5 h-4/5 text-white mx-auto" icon={icon} />
             }
         </div>
     );
