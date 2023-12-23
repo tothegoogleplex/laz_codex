@@ -19,7 +19,7 @@ export function CharInfo() {
 
     const { charName } = useParams();
     const [data] = useState(characters[charName]);
-    const [view, setView] = useState(VIEWS.DICE);
+    const [view, setView] = useState(VIEWS.BASE);
     const [lightboxOpen, setLightBoxOpen] = useState(false);
     const [imageToShow, setImageToShow] = useState('');
 

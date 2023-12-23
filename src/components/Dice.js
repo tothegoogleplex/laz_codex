@@ -2,20 +2,17 @@ import {
     faMeteor, faPlus, faMinus, faExplosion
 } from '@fortawesome/free-solid-svg-icons';
 
-import {
-    faFire as Heat,
-    faIcicles as Cold,
-    faBiohazard as Bio,
-    faRadiation as Rad,
-    faHandHolding as Phys,
-    faBolt as Elec,
-    faGaugeHigh as Grav,
-    faStarHalfStroke as Cos
-} from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-export function NavDice({ value }) {
-    return (null);
+export function NavDice({ type, value }) {
+    return (null
+        // roll until fail : value under d8 value
+        //     let content = [];
+        //                         for (let i = 1; i <= 5; i++) {
+        //                             content.push(<NavDice type={type} value={amount} />);
+        //                         }
+        //                         return content;
+    );
 };
 
 export function BaseDice({ value }) {
@@ -47,10 +44,19 @@ export function BaseDice({ value }) {
     );
 };
 
-export function EnvDice({ value, type }) {
-
+export function EnvDice({ type, value }) {
     return (
-        null
+        <div className="grid rounded w-24 h-24 bg-black items-center">
+            {
+                (() => {
+                    if (Math.floor(Math.random() * 11) > value) {
+                        console.log(value);
+                        <FontAwesomeIcon className="w-4/5 h-4/5 text-white mx-auto" icon={type} />
+                    }
+                })()
+
+            }
+        </div>
     );
 };
 // todo: rename characters stats to match so that can index name as icon={}

@@ -184,9 +184,9 @@ export const characters = {
       },
       nav: {
         "Land": 5,
-        "Atmos": 0,
+        "Atmos": 2,
         "Swim": 3,
-        "Space": 0
+        "Space": 5
       },
       base: {
         "Mox": 2,
@@ -199,9 +199,9 @@ export const characters = {
       env: {
         "Heat": 0,
         "Cold": 0,
-        "Bio": -1,
+        "Bio": 1,
         "Rad": 0,
-        "Phys": -1,
+        "Phys": 1,
         "Elec": 3,
         "Grav": 3,
         "Cos": 5
@@ -398,13 +398,13 @@ export const characters = {
       },
       env: {
         "Heat": 2,
-        "Cold": 4,
-        "Bio": 5,
+        "Cold": 8,
+        "Bio": 4,
         "Rad": 2,
-        "Phys": 3,
-        "Elec": 1,
-        "Grav": 3,
-        "Cos": 2
+        "Phys": 2,
+        "Elec": 4,
+        "Grav": 5,
+        "Cos": 3
       }
     },
 
@@ -452,7 +452,7 @@ export const characters = {
         "Space": 0
       },
       base: {
-        "Mox": -1,
+        "Mox": 1,
         "Dex": 5,
         "Fort": 2,
         "Acu": 2,
@@ -460,9 +460,9 @@ export const characters = {
         "Pres": 5
       },
       env: {
-        "Heat": 0,
-        "Cold": 0,
-        "Bio": -2,
+        "Heat": 2,
+        "Cold": 2,
+        "Bio": 0,
         "Rad": 0,
         "Phys": 0,
         "Elec": 0,
