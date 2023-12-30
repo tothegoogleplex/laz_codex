@@ -1,6 +1,5 @@
 import { Fragment, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { NavBar } from '../components/NavBar';
 import { GalleryCard } from '../components/GalleryCard';
 import { TextBlurb } from './TextBlurb';
 import { DiceBox } from './DiceBox';
@@ -39,8 +38,7 @@ export function CharInfo() {
 
     return (
         <Fragment>
-            <div className="App h-screen">
-                <NavBar />
+            <div className="App h-auto">
                 <div className="container h-auto z-50">
                     <div className="my-2 sm:p-16 sm:m-2 md:p-12">
                         <div className="bg-transparent mt-96">

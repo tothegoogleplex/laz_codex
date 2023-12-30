@@ -478,7 +478,7 @@ export const characters = {
       },
       {
         url: "aias_Chamychamomile.png",
-        anchor: "bg-left"
+        anchor: "bg-top"
       },
       {
         url: "aias_burn-ar.png",

@@ -1,5 +1,4 @@
 import { Fragment } from 'react';
-import { NavBar } from '../components/NavBar';
 
 export function ErrorPage() {
     const greetings = [
@@ -14,8 +13,7 @@ export function ErrorPage() {
 
     return (
         <Fragment>
-            <NavBar />
-            <div className="App h-screen">
+            <div className="App h-auto">
                 <div className="container sm:w-screen lg:w-3/4 h-auto z-50">
                     <div className="w-full items-center text-center">
                         <h1 className="text-7xl my-8">404</h1>
