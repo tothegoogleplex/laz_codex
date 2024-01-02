@@ -65,15 +65,15 @@ export function NavBar() {
                             {navigation.map((item) => (
                                 <Disclosure.Button
                                     key={item.name}
-                                    as="a"
-                                    href={item.href}
                                     className={classNames(
                                         item.current ? 'bg-zinc-900 text-white' : 'text-gray-300 hover:bg-zinc-700 hover:text-white',
                                         'block rounded-md px-3 py-2 text-base font-medium'
                                     )}
                                     aria-current={item.current ? 'page' : undefined}
                                 >
+                                    <Link to={item.href}>
                                     {item.name}
+                                    </Link>
                                 </Disclosure.Button>
                             ))}
                         </div>
