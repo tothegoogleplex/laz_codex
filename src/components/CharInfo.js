@@ -41,10 +41,10 @@ export function CharInfo() {
             <div className="App h-auto">
                 <div className="container h-auto z-50">
                     <div className="my-2 sm:p-16 sm:m-2 md:p-12">
-                        <div className="bg-transparent mt-96">
+                        <div className="bg-transparent mt-80 md:mt-96">
                             <div className="grid grid-cols-2 lg:grid-cols-3">
                                 <div className="mx-auto col-span-2 lg:col-span-1">
-                                    <div style={{ "backgroundImage": `url("${bgUrl}")` }} className={classNames("w-96 h-96 bg-cover rounded -mt-96", data.icon_anchor)}>
+                                    <div style={{ "backgroundImage": `url("${bgUrl}")` }} className={classNames("h-80 w-80 md:w-96 md:h-96 bg-cover rounded -mt-80 md:-mt-96", data.icon_anchor)}>
                                     </div>
                                 </div>
                                 <div className="flex flex-row lg:place-content-center lg:order-first mt-5 lg:mt-0">
@@ -91,7 +91,7 @@ export function CharInfo() {
                                 {
                                     view === VIEWS.INFO ?
                                         <Fragment>
-                                            <h2 className="text-white text-5xl mt-10">Meta Data:</h2>
+                                            <h2 className="text-white text-3xl md:text-5xl mt-10">Meta Data:</h2>
                                             {data.meta_data.map((p) => (
                                                 <TextBlurb p={p} />
                                             ))}
@@ -119,7 +119,7 @@ export function CharInfo() {
                                     view === VIEWS.REF ?
                                         <Fragment>
                                             <img className="mt-10 w-auto h-full bg-cover rounded mx-auto" src={refUrl} alt={""} />
-                                            <h2 className="text-white text-5xl mt-10">Physical Data:</h2>
+                                            <h2 className="text-white text-3xl md:text-5xl mt-10">Physical Data:</h2>
                                             {data.physical_data.map((p) => (
                                                 <TextBlurb p={p} />
                                             ))}
