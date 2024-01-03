@@ -42,32 +42,32 @@ export function CharInfo() {
                 <div className="container h-auto z-50">
                     <div className="my-2 sm:p-16 sm:m-2 md:p-12">
                         <div className="bg-transparent mt-96">
-                            <div className="grid grid-cols-1 lg:grid-cols-3">
-                                <div>
-                                    <div style={{ "backgroundImage": `url("${bgUrl}")` }} className={classNames("w-96 h-96 mx-auto bg-cover order-first rounded -mt-96", data.icon_anchor)}>
+                            <div className="grid grid-cols-2 lg:grid-cols-3">
+                                <div className="mx-auto col-span-2 lg:col-span-1">
+                                    <div style={{ "backgroundImage": `url("${bgUrl}")` }} className={classNames("w-96 h-96 bg-cover rounded -mt-96", data.icon_anchor)}>
                                     </div>
                                 </div>
-                                <div className="flex flex-row lg:place-content-center order-last lg:order-first mt-5 lg:mt-0">
-                                    <div className={classNames("basis-1/6 lg:basis-1/3", (view === VIEWS.BASE ? "text-white" : "text-zinc-400"))}>
-                                        <UserCircleIcon onTouchStart={() => (setView(VIEWS.BASE))} onClick={() => (setView(VIEWS.BASE))} className="h-10 m-auto" aria-hidden="true" />
+                                <div className="flex flex-row lg:place-content-center lg:order-first mt-5 lg:mt-0">
+                                    <div className={classNames("basis-1/3", (view === VIEWS.BASE ? "text-white" : "text-zinc-400"))}>
+                                        <UserCircleIcon onTouchStart={() => (setView(VIEWS.BASE))} onClick={() => (setView(VIEWS.BASE))} className="h-10 m-auto" />
                                     </div>
-                                    <div className={classNames("basis-1/6 lg:basis-1/3", (view === VIEWS.INFO ? "text-white" : "text-zinc-400"))}>
-                                        <UserPlusIcon onTouchStart={() => (setView(VIEWS.INFO))} onClick={() => (setView(VIEWS.INFO))} className="h-10 m-auto" aria-hidden="true" />
+                                    <div className={classNames("basis-1/3", (view === VIEWS.INFO ? "text-white" : "text-zinc-400"))}>
+                                        <UserPlusIcon onTouchStart={() => (setView(VIEWS.INFO))} onClick={() => (setView(VIEWS.INFO))} className="h-10 m-auto" />
                                     </div>
-                                    <div className={classNames("basis-1/6 lg:basis-1/3", (view === VIEWS.DICE ? "text-white" : "text-zinc-400"))}>
-                                        <CogIcon onTouchStart={() => (setView(VIEWS.DICE))} onClick={() => (setView(VIEWS.DICE))} className="h-10 m-auto" aria-hidden="true" />
+                                    <div className={classNames("basis-1/3", (view === VIEWS.DICE ? "text-white" : "text-zinc-400"))}>
+                                        <CogIcon onTouchStart={() => (setView(VIEWS.DICE))} onClick={() => (setView(VIEWS.DICE))} className="h-10 m-auto" />
                                     </div>
                                 </div>
 
-                                <div className="flex flex-row place-content-end lg:place-content-center order-last -mt-10 lg:mt-0">
-                                    <div className={classNames("basis-1/6 lg:basis-1/3", (view === VIEWS.INV ? "text-white" : "text-zinc-400"))}>
-                                        <BookmarkSquareIcon onTouchStart={() => (setView(VIEWS.INV))} onClick={() => (setView(VIEWS.INV))} className="h-10 m-auto" aria-hidden="true" />
+                                <div className="flex flex-row order-last lg:place-content-center mt-5 lg:mt-0">
+                                    <div className={classNames("basis-1/3", (view === VIEWS.INV ? "text-white" : "text-zinc-400"))}>
+                                        <BookmarkSquareIcon onTouchStart={() => (setView(VIEWS.INV))} onClick={() => (setView(VIEWS.INV))} className="h-10 m-auto" />
                                     </div>
-                                    <div className={classNames("basis-1/6 lg:basis-1/3", (view === VIEWS.REF ? "text-white" : "text-zinc-400"))}>
-                                        <PhotoIcon onTouchStart={() => (setView(VIEWS.REF))} onClick={() => (setView(VIEWS.REF))} className="h-10 m-auto" aria-hidden="true" />
+                                    <div className={classNames("basis-1/3", (view === VIEWS.REF ? "text-white" : "text-zinc-400"))}>
+                                        <PhotoIcon onTouchStart={() => (setView(VIEWS.REF))} onClick={() => (setView(VIEWS.REF))} className="h-10 m-auto" />
                                     </div>
-                                    <div className={classNames("basis-1/6 lg:basis-1/3", (view === VIEWS.GAL ? "text-white" : "text-zinc-400"))}>
-                                        <Squares2X2Icon onTouchStart={() => (setView(VIEWS.GAL))} onClick={() => (setView(VIEWS.GAL))} className="h-10 m-auto" aria-hidden="true" />
+                                    <div className={classNames("basis-1/3", (view === VIEWS.GAL ? "text-white" : "text-zinc-400"))}>
+                                        <Squares2X2Icon onTouchStart={() => (setView(VIEWS.GAL))} onClick={() => (setView(VIEWS.GAL))} className="h-10 m-auto" />
                                     </div>
                                 </div>
                             </div>
