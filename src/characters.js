@@ -485,5 +485,86 @@ export const characters = {
         anchor: "bg-top"
       }
     ]
+  },
+
+  saiph: {
+    url: 'saiph',
+    name: 'Saiph_Starsystems',
+    race: 'Avali',
+    pronouns: 'they/them',
+    alias: 'Your Local Cybernetics Thriftstop',
+
+    profile_img: 'saiph_icon.png',
+    ref_img: 'saiph_ref.png',
+
+    blurb: '',
+
+    meta_data: [],
+
+    physical_data: [],
+
+    stats: {
+      self: {
+        "Health": 10,
+        "KAC": 4,
+        "EAC": 2,
+        "Stunt": 4
+      },
+      nav: {
+        "Land": 7,
+        "Atmos": 1,
+        "Swim": 0,
+        "Space": 0
+      },
+      base: {
+        "Mox": 2,
+        "Dex": 5,
+        "Fort": 2,
+        "Acu": 2,
+        "Wit": 5,
+        "Pres": 1
+      },
+      env: {
+        "Heat": 2,
+        "Cold": 4,
+        "Bio": 5,
+        "Rad": 2,
+        "Phys": 3,
+        "Elec": 1,
+        "Grav": 3,
+        "Cos": 2
+      }
+    },
+
+    img_gallery: [
+      {
+        url: "saiph_CHUUNIBYOU.jpg",
+        anchor: "bg-center"
+      },
+      {
+        url: "saiph_caketime.png",
+        anchor: "bg-top"
+      },
+      {
+        url: "saiph_CrabsBeverage.png",
+        anchor: "bg-top"
+      },
+      {
+        url: "saiph_doomy.png",
+        anchor: "bg-top"
+      },
+      {
+        url: "saiph_crazyclaw.gif",
+        anchor: "bg-center"
+      },
+      {
+        url: "saiph_eyrinmor.png",
+        anchor: "bg-top"
+      },
+      {
+        url: "saiph_emordnilap.png",
+        anchor: "bg-top"
+      },
+    ]
   }
 };

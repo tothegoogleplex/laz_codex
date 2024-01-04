@@ -47,6 +47,7 @@ export function CharInfo() {
                                     <div style={{ "backgroundImage": `url("${bgUrl}")` }} className={classNames("h-80 w-80 md:w-96 md:h-96 bg-cover rounded -mt-80 md:-mt-96", data.icon_anchor)}>
                                     </div>
                                 </div>
+
                                 <div className="flex flex-row lg:place-content-center lg:order-first mt-5 lg:mt-0">
                                     <div className={classNames("basis-1/3", (view === VIEWS.BASE ? "text-white" : "text-zinc-400"))}>
                                         <UserCircleIcon onTouchStart={() => (setView(VIEWS.BASE))} onClick={() => (setView(VIEWS.BASE))} className="h-10 m-auto" />
@@ -78,6 +79,7 @@ export function CharInfo() {
                                     <p className="text-lg text-zinc-400">{data.race} | {data.pronouns}</p>
                                     <p className="text-white text-md mt-3">{data.alias}</p>
                                 </div>
+
                                 {
                                     view === VIEWS.BASE ?
                                         <Fragment>
