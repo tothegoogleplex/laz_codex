@@ -1,13 +1,14 @@
+import { useState } from 'react';
 import { Disclosure } from '@headlessui/react';
 import { StarIcon } from '@heroicons/react/24/outline';
 import { StarIcon as StarSolid } from '@heroicons/react/24/solid';
 import { Link } from 'react-router-dom';
 
 const navigation = [
-    { name: 'Entities', href: "/", current: true },
-    { name: 'Races', href: "races", current: false },
-    { name: 'Locations', href: "locations", current: false },
-    { name: 'About', href: "about", current: false },
+    { name: 'Entities', href: "/" },
+    { name: 'Races', href: "races" },
+    { name: 'Locations', href: "locations" },
+    { name: 'About', href: "about" },
 ];
 
 function classNames(...classes) {
@@ -16,6 +17,8 @@ function classNames(...classes) {
 
 export function NavBar() {
     var logoURL = process.env.PUBLIC_URL + "/images/logo.png";
+
+    const [currentLink, setCurrentLink] = useState("Entities");
 
     return (
         <Disclosure as="nav" className="bg-transparent">
@@ -49,7 +52,9 @@ export function NavBar() {
                                     <div className="flex space-x-4">
                                         {navigation.map((item) => (
                                             <Link to={item.href}
-                                                className={classNames(item.current ? 'underline underline-offset-8 text-white' : 'text-gray-300 hover:bg-zinc-700 hover:text-white', 'rounded-md px-3 py-2 text-sm font-medium')}
+                                                key={item.name}
+                                                onClick={() => { setCurrentLink(item.name) }}
+                                                className={classNames(item.name === currentLink ? 'underline underline-offset-8 text-white' : 'text-gray-300 hover:bg-zinc-700 hover:text-white', 'rounded-md px-3 py-2 text-sm font-medium')}
                                                 aria-current={item.current ? 'page' : undefined}>
                                                 {item.name}
                                             </Link>
@@ -63,18 +68,19 @@ export function NavBar() {
                     <Disclosure.Panel className="sm:hidden">
                         <div className="space-y-1 px-2 pb-3 pt-2">
                             {navigation.map((item) => (
-                                <Disclosure.Button
+                                <Link
+                                    to={item.href}
                                     key={item.name}
+                                    onClick={() => { setCurrentLink(item.name) }}
+                                    onTouchStart={() => { setCurrentLink(item.name) }}
                                     className={classNames(
-                                        item.current ? 'bg-zinc-900 text-white' : 'text-gray-300 hover:bg-zinc-700 hover:text-white',
+                                        item.current === currentLink ? 'underline underline-offset-8 bg-zinc-900 text-white' : 'text-gray-300 hover:bg-zinc-800 hover:text-white',
                                         'block rounded-md px-3 py-2 text-base font-medium'
                                     )}
                                     aria-current={item.current ? 'page' : undefined}
                                 >
-                                    <Link to={item.href}>
                                     {item.name}
-                                    </Link>
-                                </Disclosure.Button>
+                                </Link>
                             ))}
                         </div>
                     </Disclosure.Panel>
