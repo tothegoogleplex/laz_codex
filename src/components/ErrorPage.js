@@ -6,9 +6,7 @@ export function ErrorPage() {
         "Mother Kepler shine upon us!",
         "Starboard and shattered starshine; starlit sight.",
         "One degree off and we'll be lightyears away from our destination...",
-        "Hey! I think we've met--back on Vasya, a few Sol ago.",
         "Tell me what you see out there on starlit seas. I'll miss you.",
-        "Wh-what are you doing in my lab?!",
     ]
 
     return (

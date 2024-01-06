@@ -22,6 +22,7 @@ export const attributes = {
         name: "Terran Hardship",
         desc: "Terrans come from a dying world, strengthened by Earth's toxic breath. Terrans gain the Survivalist attribute."
     },
+
     // (typically) martian traits
     MARTIAN_ENG: {
         name: "Martian Engineering",

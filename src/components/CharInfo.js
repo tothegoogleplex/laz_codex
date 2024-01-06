@@ -5,6 +5,7 @@ import { TextBlurb } from './TextBlurb';
 import { DiceBox } from './DiceBox';
 import { characters } from '../characters';
 import { UserCircleIcon, UserPlusIcon, PhotoIcon, BookmarkSquareIcon, Squares2X2Icon, CogIcon } from '@heroicons/react/24/solid';
+import { ErrorPage } from '../components/ErrorPage';
 
 export function CharInfo() {
     const VIEWS = {
@@ -14,7 +15,7 @@ export function CharInfo() {
         INV: "Inventory",
         REF: "Reference",
         GAL: "Gallery"
-    }
+    };
 
     const { charName } = useParams();
     const [data] = useState(characters[charName]);
@@ -22,8 +23,10 @@ export function CharInfo() {
     const [lightboxOpen, setLightBoxOpen] = useState(false);
     const [imageToShow, setImageToShow] = useState('');
 
-    var bgUrl = process.env.PUBLIC_URL + "/images/" + charName + "/" + data.profile_img;
-    var refUrl = process.env.PUBLIC_URL + "/images/" + charName + "/" + data.ref_img;
+    if (data) {
+        var bgUrl = process.env.PUBLIC_URL + "/images/" + charName + "/" + data.profile_img;
+        var refUrl = process.env.PUBLIC_URL + "/images/" + charName + "/" + data.ref_img;
+    }
 
     function classNames(...classes) {
         return classes.filter(Boolean).join(' ')
@@ -35,6 +38,10 @@ export function CharInfo() {
     };
 
     const hideLightBox = () => { setLightBoxOpen(false) };
+
+    if (!data) {
+        return (<ErrorPage />);
+    }
 
     return (
         <Fragment>

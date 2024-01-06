@@ -5,6 +5,7 @@ import { PContainer } from "./components/PContainer";
 import { CharInfo } from "./components/CharInfo";
 import { AboutPage } from "./components/AboutPage";
 import { NavBar } from "./components/NavBar";
+import { RaceList } from "./components/RaceList";
 
 import './App.css';
 
