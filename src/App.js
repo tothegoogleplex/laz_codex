@@ -17,7 +17,7 @@ function App() {
       <Routes>
         <Route path="/" exact element={<CharsPage />} />
         <Route path="/char/:charName" element={<CharInfo />} />
-        {/* <Route path="/races" element={<RaceList />} /> */}
+        <Route path="/races" element={<RaceList />} />
         {/* <Route path="/locations" element={LocalePage} /> */}
         <Route path="/about" element={<AboutPage />} />
         <Route path="*" element={<ErrorPage />} />

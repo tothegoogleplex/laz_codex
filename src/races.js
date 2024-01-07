@@ -5,6 +5,7 @@ export const races = {
         name: "Humanity",
         subtitle: "Survivors of the Sol System",
         banner_img: "earthrise.jpg",
+        banner_anchor: "bg-top",
 
         quote: "The universe serves a grand sea between Humanity, their ancestors scattered and lost upon the stars just as waves break against stoneface. There may never be a unified Humanity; Terra has been abandoned.",
         quote_auth: "Isyyo Amara, Past Dictum of Aethon",
