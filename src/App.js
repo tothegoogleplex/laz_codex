@@ -5,7 +5,8 @@ import { PContainer } from "./components/PContainer";
 import { CharInfo } from "./components/CharInfo";
 import { AboutPage } from "./components/AboutPage";
 import { NavBar } from "./components/NavBar";
-import { RaceList } from "./components/RaceList";
+import { SophontList } from "./components/SophontList";
+import { SophontDetail } from "./components/SophontDetail";
 
 import './App.css';
 
@@ -17,7 +18,8 @@ function App() {
       <Routes>
         <Route path="/" exact element={<CharsPage />} />
         <Route path="/char/:charName" element={<CharInfo />} />
-        <Route path="/races" element={<RaceList />} />
+        <Route path="/sophonts" element={<SophontList />} />
+        <Route path="/sophont/:sName" element={<SophontDetail />} />
         {/* <Route path="/locations" element={LocalePage} /> */}
         <Route path="/about" element={<AboutPage />} />
         <Route path="*" element={<ErrorPage />} />

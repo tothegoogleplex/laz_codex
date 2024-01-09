@@ -1,29 +1,29 @@
 import { attributes } from "./attributes";
 
-export const races = {
+export const sophonts = {
     human: {
         name: "Humanity",
         subtitle: "Survivors of the Sol System",
-        banner_img: "earthrise.jpg",
+        banner_img: "earthrise_simon-kregar.jpeg",
         banner_anchor: "bg-top",
 
-        quote: "The universe serves a grand sea between Humanity, their ancestors scattered and lost upon the stars just as waves break against stoneface. There may never be a unified Humanity; Terra has been abandoned.",
+        quote: "The universe serves a grand sea between Humanity, their ancestors scattered and lost upon the stars just as waves break against stoneface. There may never be a unified Humanity.",
         quote_auth: "Isyyo Amara, Past Dictum of Aethon",
 
         description: [
-            "Approximately three thousand and fifty standard Sol ago, Humanity was divided in an attempt to avoid extinction in the face of climate collapse. As Earth's climate began to undergo rapid decay, seedships fled to the distant Cygnus constellation, seeking out the exoplanet Kepler-22b. A few hundred Sol later, those left on Earth tried to manifest safety on the desolate surface of Mars. Fractured and at unending war with themselves, Humanity is the newest ascended race to take to the stars, and find themselves held at a contemptuous distance from the people of the cosmos.",
+            "Approximately three thousand and fifty standard Sol ago, Humanity was divided in an attempt to avoid extinction in the face of climate collapse. As Earth's climate began to undergo rapid decay, seedships fled to the distant Cygnus constellation, seeking out the exoplanet Kepler-22b. A few hundred Sol later, those left on Earth tried to manifest safety on the desolate surface of Mars. Fractured and at unending war with themselves, Humanity is the newest ascended of the sophonts to take to the stars, and find themselves held at a contemptuous distance from the sophonts of the cosmos.",
         ],
 
         trait_desc: [
-            "Humans are notorious for appearing quite fragile and being deceivingly hardy. While prone to many field hazards and especially hard to transport through space, Humans are determined and resilient, and Humans can be found in all corners of the known universe. Humans are an Uncommon race, considered endangered after the decline of Earth's biosphere.",
+            "Humans are notorious for appearing quite fragile and being deceivingly hardy. While prone to many field hazards and especially hard to transport through space, Humans are determined and resilient, and Humans can be found in all corners of the known universe. Humans are an Uncommon kind, considered endangered after the decline of Earth's biosphere.",
             "Humans are a Medium sized species with an average height of 5'10”(178 cm), and they occupy one unit space. The Aethen subspecies of Human tends to be slightly smaller, averaging a height of 5'1”(154 cm). Humans live about 120 Sol, but Aethens modified by the Splice may live up towards 300 Sol.",
         ],
 
         equip_slots: {},
 
-        subtypes: {
-            desc: "Humanity is splintered, and can be found as multiple subtypes, diverging over a few thousand Sol.",
+        subtype_desc: "Humanity is splintered, and can be found as multiple subtypes, diverging over a few thousand Sol of division.",
 
+        subtypes: {
             aethen: {
                 name: "Aethen Human",
                 subtitle: "Kepler's Starchildren",
@@ -149,5 +149,66 @@ export const races = {
                 quote: "With fury of red winds and vile cunning; fleet across the ruby desert."
             },
         }
-    }
+    },
 };
+
+// SOPHONT: {
+//     name: "",
+//     subtitle: "",
+//     banner_img: "",
+//     banner_anchor: "bg-top",
+
+//     quote: "",
+//     quote_auth: "",
+
+//     description: [
+//         "",
+//     ],
+
+//     trait_desc: [
+//         "",
+//         "",
+//     ],
+
+//     equip_slots: {},
+
+//     subtypes: {
+//         desc: "",
+
+//         SUBTYPE: {
+//             name: "",
+//             subtitle: "",
+
+//             detail: [
+//                 "",
+//                 ""
+//             ],
+
+//             attributes: [
+//                 currently unused at the time
+//             ],
+
+//             stats: {
+//                 self: {
+//                     "Stunt": 2
+//                 },
+//                 nav: {
+//                     "Land": 5
+//                 },
+//                 base: {
+//                     "Fort": 1
+//                 },
+//                 env: {
+//                     "Heat": 1
+//                 }
+//             },
+
+//             start_gear: [
+//                 "",
+//                 ""
+//             ],
+
+//             quote: ""
+//         },
+//     }
+// }

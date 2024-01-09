@@ -1,62 +1,10 @@
-// CHAR: {
-//     url: '',
-//     name: '',
-//     race: '',
-//     pronouns: '',
-//     alias: '',
-
-//     profile_img: '',
-//     ref_img: '',
-
-//     blurb: '',
-
-//     meta_data: [],
-
-//     physical_data: [],
-
-// stats: {
-//   self: {
-//     "Health": 10,
-//     "KAC": 4,
-//     "EAC": 2,
-//     "Stunt": 4
-//   },
-//   nav: {
-//     "Land": 7,
-//     "Atmos": 1,
-//     "Swim": 0,
-//     "Space": 0
-//   },
-//   base: {
-//     "Mox": 2,
-//     "Dex": 5,
-//     "Fort": 2,
-//     "Acu": 2,
-//     "Wit": 5,
-//     "Pres": 1
-//   },
-//   env: {
-//     "Heat": 2,
-//     "Cold": 4,
-//     "Bio": 5,
-//     "Rad": 2,
-//     "Phys": 3,
-//     "Elec": 1,
-//     "Grav": 3,
-//     "Cos": 2
-//   }
-// },
-
-//     img_gallery: []
-// }
-
 export const characters = {
   chelsea: {
-    url: 'chelsea',
+    owner: 'buildingstarships',
     name: 'Chelsea Groschell',
     race: 'Human [Aethen]',
     pronouns: 'she/her',
-    alias: 'The Matriarch of Aethon',
+    alias: 'Star Mother',
 
     profile_img: 'chelsea_icon.png',
     icon_anchor: 'bg-center',
@@ -153,7 +101,7 @@ export const characters = {
   },
 
   metris: {
-    url: 'metris',
+    owner: 'buildingstarships',
     name: 'Dr. Metris Krehnr',
     race: 'Sylvan [Lunar]',
     pronouns: 'he/him',
@@ -249,7 +197,7 @@ export const characters = {
   },
 
   tammy: {
-    url: 'tammy',
+    owner: 'buildingstarships',
     name: 'Tammy [Model F-10]',
     race: 'Droid',
     pronouns: 'she/her',
@@ -354,7 +302,7 @@ export const characters = {
   },
 
   rhauko: {
-    url: 'rhauko',
+    owner: 'buildingstarships',
     name: 'Rhauko Balefeather',
     race: 'Avali',
     pronouns: 'they/them',
@@ -417,7 +365,7 @@ export const characters = {
   },
 
   aias: {
-    url: 'aias',
+    owner: 'buildingstarships',
     name: 'Aias Miaris',
     race: 'Sylvan [Solar]',
     pronouns: 'they/them',
@@ -488,7 +436,7 @@ export const characters = {
   },
 
   saiph: {
-    url: 'saiph',
+    owner: 'buildingstarships',
     name: 'Saiph_Starsystems',
     race: 'Avali',
     pronouns: 'they/them',
@@ -568,3 +516,58 @@ export const characters = {
     ]
   }
 };
+
+// CHAR: {
+//     owner: '',
+//     name: '',
+//     race: '',
+//     pronouns: '',
+//     alias: '',
+
+//     profile_img: '',
+//     ref_img: '',
+
+//     blurb: '',
+
+//     meta_data: [],
+
+//     physical_data: [],
+
+// if you're just storing an non-LAZ character here, replace stats with:
+// owner: YOURNAME
+
+// stats: {
+//   self: {
+//     "Health": 10,
+//     "KAC": 4,
+//     "EAC": 2,
+//     "Stunt": 4
+//   },
+//   nav: {
+//     "Land": 7,
+//     "Atmos": 1,
+//     "Swim": 0,
+//     "Space": 0
+//   },
+//   base: {
+//     "Mox": 2,
+//     "Dex": 5,
+//     "Fort": 2,
+//     "Acu": 2,
+//     "Wit": 5,
+//     "Pres": 1
+//   },
+//   env: {
+//     "Heat": 2,
+//     "Cold": 4,
+//     "Bio": 5,
+//     "Rad": 2,
+//     "Phys": 3,
+//     "Elec": 1,
+//     "Grav": 3,
+//     "Cos": 2
+//   }
+// },
+
+//     img_gallery: []
+// }

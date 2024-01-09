@@ -128,6 +128,7 @@ export function CharInfo() {
                                     view === VIEWS.REF ?
                                         <Fragment>
                                             <img className="mt-10 w-auto h-full bg-cover rounded mx-auto" src={refUrl} alt={""} />
+                                            <p><i>character kept by {data.owner}</i></p>
                                             <h2 className="text-white text-3xl md:text-5xl mt-10">Physical Data:</h2>
                                             {data.physical_data.map((p) => (
                                                 <TextBlurb p={p} />
